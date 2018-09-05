@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="weathericons-regular-webfont.ttf">
+            <string>WeatherIcons-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForecastView" customModule="WeatherAssistant" customModuleProvider="target">
+            <connections>
+                <outlet property="iconLabel" destination="bwE-Du-Cmn" id="J4x-2I-yyc"/>
+                <outlet property="temperatureLabel" destination="qXi-E0-VeE" id="yqp-JE-Uc2"/>
+                <outlet property="timeLabel" destination="pvc-xU-iGx" id="Qts-xv-pXe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="56" height="114"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvc-xU-iGx">
+                    <rect key="frame" x="0.0" y="0.0" width="56" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwE-Du-Cmn">
+                    <rect key="frame" x="0.0" y="0.0" width="56" height="58"/>
+                    <fontDescription key="fontDescription" name="WeatherIcons-Regular" family="Weather Icons" pointSize="40"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXi-E0-VeE">
+                    <rect key="frame" x="0.0" y="58" width="56" height="0.0"/>
+                    <fontDescription key="fontDescription" name="WeatherIcons-Regular" family="Weather Icons" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bwE-Du-Cmn" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="0h5-L8-bfS"/>
+                <constraint firstItem="bwE-Du-Cmn" firstAttribute="top" secondItem="pvc-xU-iGx" secondAttribute="bottom" id="0hT-6b-lfx"/>
+                <constraint firstItem="bwE-Du-Cmn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5ee-0Y-rhS"/>
+                <constraint firstItem="qXi-E0-VeE" firstAttribute="top" secondItem="bwE-Du-Cmn" secondAttribute="bottom" id="FnQ-SB-yCW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qXi-E0-VeE" secondAttribute="trailing" id="dN0-7r-X3J"/>
+                <constraint firstItem="pvc-xU-iGx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="oQ0-kR-UMP"/>
+                <constraint firstItem="qXi-E0-VeE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pi0-8D-fV6"/>
+                <constraint firstItem="pvc-xU-iGx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="sNF-rH-0eP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pvc-xU-iGx" secondAttribute="trailing" id="zml-LL-WrJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
